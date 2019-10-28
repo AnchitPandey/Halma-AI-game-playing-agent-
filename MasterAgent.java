@@ -3,7 +3,7 @@ import java.io.*;
 import java.util.*;
 import static java.util.stream.Collectors.toMap;
 
-class homeworkModified        
+class MasterAgent        
 {
  
         public static HashMap<String, Integer> homeCoordsHashMap(String colour)
@@ -138,7 +138,7 @@ class homeworkModified
     public static void main(String[] args)throws Exception
     {
     
-       File file  = new File ("C:\\Users\\Anchit Pandey\\Desktop\\input.txt");
+       File file  = new File ("input.txt");
        BufferedReader reader = new BufferedReader(new FileReader(file));
        String type = reader.readLine();
        String colourA = reader.readLine();
@@ -146,11 +146,10 @@ class homeworkModified
        String colourB = "";
        if (colourA.equals("WHITE"))
            colourB = "BLACK";
-       
+           
        else 
            colourB = "WHITE";
 
-       ProcessBuilder pb = new ProcessBuilder ("python","C:\\Users\\Anchit Pandey\\Desktop\\home.py");
        
        char[][] board = new char[16][16];
        for (int i =0;i< 16;i++)
@@ -167,7 +166,7 @@ class homeworkModified
        
        float time1 = 300;
        float time2 = 300;
-       File fileNew = new File ("C:\\Users\\Anchit Pandey\\Desktop\\output.txt");
+       File fileNew = new File ("output.txt");
        BufferedReader buf1 = new BufferedReader(new InputStreamReader(System.in));
        String wait= "";
        int whiteMoves = 0;
@@ -178,16 +177,7 @@ class homeworkModified
        {    
            
        long startPlayerA = System.currentTimeMillis();
-//NewClass.main (new String[0]);
-   System.out.println("problem confirmed");   
-pb.start();
-
-  int  count = 0;
-if (count ==0)
-    break;
-
-
-System.out.println("definitely");   
+NewClass.main (new String[0]);
 // homework.main(new String[0]);
        long endPlayerA = System.currentTimeMillis();
        time1 = time1 - (float)(endPlayerA - startPlayerA)/1000;
