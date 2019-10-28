@@ -4,7 +4,7 @@ import static java.util.stream.Collectors.toMap;
 
 
 
-class homework
+class halma
 {    
     
     public static String findWinner (char[][] board)
