@@ -315,7 +315,7 @@ NewClass.main (new String[0]);
        
       }
        
-       /*
+       
        if (time1 <=0 && time2<=0)
            System.out.println("Decrease depth.. something is wrong");
        else if (time1 <=0)
@@ -324,6 +324,6 @@ NewClass.main (new String[0]);
            System.out.println("BLACK LOST DUE TO TIMEOUT");
           
       System.out.println("Total moves by winner: "+totalMoveCounter);      
-    */
+    
     }   
 }
