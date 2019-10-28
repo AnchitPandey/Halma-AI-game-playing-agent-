@@ -87,7 +87,7 @@ class halma
         else
             opponentColour = "WHITE";
         
-        File file = new File ("C:\\Users\\Anchit Pandey\\Desktop\\playdata.txt");
+        File file = new File ("playdata.txt");
         
         ArrayList<String> allMoves = getPossibleMoves(currentPlayerColour, timeLimit, board, startTime);
         allMoves = sortMoves(allMoves, board, currentPlayerColour);
@@ -2057,7 +2057,7 @@ class halma
         {
            //System.out.println("All pawns out of the region");
            ArrayList<String> availableMoves = getPossibleMoves(colour, initialTimeLimit, board, startTime);            
-           File file  = new File ("C:\\Users\\Anchit Pandey\\Desktop\\output.txt");
+           File file  = new File ("output.txt");
            BufferedWriter writer = new BufferedWriter(new FileWriter(file));
            String validMove = availableMoves.get(0);
            writer.write(validMove);
@@ -2068,7 +2068,7 @@ class halma
         else
         {
            //System.out.println("Not all pawns out");
-           File file  = new File ("C:\\Users\\Anchit Pandey\\Desktop\\output.txt");
+           File file  = new File ("output.txt");
            BufferedWriter writer = new BufferedWriter(new FileWriter(file));
            String validMove = removePawnsFromHomeMoves.get(0);
            writer.write(validMove);
@@ -2148,7 +2148,7 @@ class halma
  //          if (bestMove.equals(""))
    //            bestMove = backUpBestMove;
  
-          File file = new File("C:\\Users\\Anchit Pandey\\Desktop\\output.txt");
+          File file = new File("output.txt");
           BufferedWriter writer = new BufferedWriter(new FileWriter(file));
           writer.write(bestMove);
           writer.close();        
@@ -2158,7 +2158,7 @@ class halma
         else
         {
         //    System.out.println("All pawns are NOT out, have to remove them first");
-            File file = new File ("C:\\Users\\Anchit Pandey\\Desktop\\output.txt");
+            File file = new File ("output.txt");
             BufferedWriter writer = new BufferedWriter (new FileWriter(file));
             ArrayList<String> availableMoves = sortInitial(removePawnsFromHomeMoves, board, colour);
             String bestMove = availableMoves.get(0);
@@ -2172,7 +2172,7 @@ class halma
     public static void main(String[] args)throws Exception
     {        
        long startTime = System.currentTimeMillis();
-       File file  = new File ("C:\\Users\\Anchit Pandey\\Desktop\\input.txt");
+       File file  = new File ("input.txt");
        BufferedReader buff = new BufferedReader(new FileReader(file));
        String singleOrGame = buff.readLine();
        String colour = buff.readLine();
