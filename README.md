@@ -1,6 +1,6 @@
 # Halma-AI-game-playing-agent-
 
-This repo contains code for AI agent for playing Halma (Chinese checkers). 
+This repo contains code for AI agent for playing Halma (Chinese checkers).<br>  
 halma.java  - Main Code
 master.java - Master Agent for simulating a two player game. This file creates 2 instances of the halma.java agent and starts a game between them
 
